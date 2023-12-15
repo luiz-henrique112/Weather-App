@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(./Poppins-Regular.ttf);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg,#050964 0%, #3533CD 50%, #33BBCD 100%);
+    background-attachment:fixed ;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 70%;
+    
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 70%; /* Ajuste no tamanho do input */
+    max-width: 300px;
+    cursor: pointer; /* Mudança de cursor quando ativado */
+    transition: border-color 0.3s ease; 
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* Mudança de cor na borda quando ativado */
+}
+
+button {
+    padding: 12px 30px; /* Ajuste no tamanho do bot%C3%A3o */   
+    cursor: pointer;    
+    transition: background-color 0.3s ease;
+    border-radius: 6px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+#infos {
+    display: none;
+    flex-direction: row;
+    gap: 20px;
+   
+    background-color: #ffffff;
+    border-radius:8px;
+    padding:15px;
+    flex-direction:column;
+    height:fit-content;
+    transition: opacity 3s ease; /* Adicionando uma transição para suavizar a exibição */
+    
+}
+
+#weatherInfo {
+    flex: 1 1 auto; /* Ajuste da propriedade flex para permitir o dimensionamento automático */
+    height:fit-content;/* Ajuste do valor de max-width para um número absoluto de pixels */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #dfdfdf;
+    color: #333;
+    text-align: left;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    flex-direction: column;
+    display:flex;
+    
+}
+
+.forecast-item {
+    flex: 1 1 calc(50% - 20px); /* Ajuste para garantir o layout responsivo */
+    max-width: calc(99% - 20px); /* Ajuste do max-width para manter o layout correto */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #dfdfdf;
+    color: #333;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction:column;
+    
+}
+
+.textos{
+    flex-direction: column; 
+    margin-bottom: 20px;
+}
+
+#weatherInfo:hover,
+.forecast-item:hover {
+    transform: translateY(-8px);
+}
+
+p,h2{
+    margin:0vh 
+}
+
+#forecastInfo{
+    display:none;
+    flex-direction: column;
+}
+
+.imagem-weaInfo, .imagem-foreInfo{
+    float:right;
+    margin-left:-10px
+}
+
+.imagem-weaInfo{
+    width:120px;
+}
+
+.imagem-foreInfo {
+    width: 87px;
+    margin-top: 0px;
+    align-self: right;
+    margin-bottom: auto; /* Ajuste o espaçamento conforme necessário */
+    display: block; /* Adicione essa propriedade para garantir o alinhamento horizontal */
+    margin-top: auto; /* Empurra a imagem para a parte inferior do contêiner */
+    /*margin-bottom: auto;  Garante a centralização vertical */
+    margin-right:10px
+}
+
