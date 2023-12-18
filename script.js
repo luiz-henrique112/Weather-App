@@ -12,6 +12,7 @@ const iconesClima = {
     "chuva fraca": "./icone-chuva-leve.png",
     "chuva moderada": "./icone-chuva-moderada.png",
     "chuva pesada": "./icone-chuva-pesada.png",
+    "chuva forte": "./icone-chuva-pesada.png",
     "neve fraca": "./icone-neve-leve.png",
     "neve moderada": "./icone-neve-moderada.png",
     "neve pesada": "./icone-neve-pesada.png",
